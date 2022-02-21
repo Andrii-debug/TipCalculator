@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h3 class="header">Tip Calculator</h3>
+            <p class="firsParag"></p>
+            <br>
+            <label for="amount" >Bill Amount</label>
+            <br>
+            <button><i class="fa-solid fa-dollar-sign"></i></button>
+            <input type="number" id="amount" placeholder="Write sum...">
+            <br>
+            <br>
+            <label for="guest">Number of Guest</label>
+            <br>
+            <button><i class="fa-solid fa-person"></i></button>
+            <input type="number" id="guest" placeholder="Write quantity...">
+            <br>
+            <br>
+            <label for="quality">Service Quality</label>
+            <br>
+            <select id="quality">
+                <option disabled selected value="0">Choose...</option>
+                <option value="30">30% - Outstanding</option>
+                <option value="20">20% - Good</option>
+                <option value="15">15% - It was ok</option>
+                <option value="10">10% - Bad</option>
+                <option value="5">5% - Terrible</option>
+            </select>
+            <div class="box-1">
+                <p class="paragCalc"></p>
+                <button style=" border-radius: 5px;
+                   width: fit-content;"  id="calc">Calculate</button>
+            </div>
+        </div>
+        <div id="tip-amount"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
